@@ -4,18 +4,18 @@
     {
       "id": 0,
       "name": "main-paper-end-to-end",
-      "prompt": "这是 Nature Climate Change 上的一篇文章，PDF 在 /home/pengpeng/read paper/20260523meeting/ 下，主刊 \"Cross-national comparative assessment of synergies and conflicts in climate policy mixes.pdf\"。把它转成方便阅读的 markdown，图片要在正确位置。",
+      "prompt": "这是 Nature Climate Change 上的一篇文章，主刊 PDF 在 path/to/main.pdf。把它转成方便阅读的 markdown，图片要在正确位置。",
       "files": [
-        "/home/pengpeng/read paper/20260523meeting/Cross-national comparative assessment of synergies and conflicts in climate policy mixes.pdf"
+        "path/to/main.pdf"
       ],
       "expected_output": "A .md file (basename matches the PDF) ≥400 lines, with title/authors/abstract/Main/named H2 sections/Methods+H3 sub-sections/numbered references; a figures/ folder with ≥7 figure PNGs and ≥10 equation PNGs."
     },
     {
       "id": 1,
       "name": "supplementary-information",
-      "prompt": "把同目录下的 SI 文件 \"SI-Cross-national comparative assessment of synergies and conflicts in climate policy mixes.pdf\" 也转成 markdown。",
+      "prompt": "把同目录下的 SI 文件 path/to/SI.pdf 也转成 markdown。",
       "files": [
-        "/home/pengpeng/read paper/20260523meeting/SI-Cross-national comparative assessment of synergies and conflicts in climate policy mixes.pdf"
+        "path/to/SI.pdf"
       ],
       "expected_output": "A multi-thousand-line .md, ≥20 figures, no spurious top-level '## Main' heading (SI has no abstract), 'Supplementary information' line not classified as authors. Body font auto-detected as Times 12.0."
     }
